@@ -11,4 +11,10 @@ public class TesteEmpregado{
         e1.setSalario(2000);
         e2.setSalario(1700);
         e2.setComissao(0.2);
+
+        List <Empregado> emps = Arrays.asList(e1,e2,e3);
+
+        for (Empregado e : emps){
+            System.out.println(e.calculaSalario());
+        }
     }
